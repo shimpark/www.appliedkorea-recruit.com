@@ -1,0 +1,284 @@
+#wrap{
+	.section{
+		position: relative;
+		
+		&-title{
+			background: url(../img/mobile/bg_title.jpg) no-repeat 50% 100%;
+			background-size:cover;
+			@include rem(padding-bottom,75px);
+			.text-group{
+				text-align:left;
+				
+				dl{
+					@include rem(margin-top,42px);
+					&:first-child{@include rem(margin-top,27px);}
+					dt,dd{
+						color:#347da2;@include vw(20px);
+						@include breakpoint(desktop){
+							@include vw(24px);
+						}
+
+					}
+					dt{
+						font-weight:700;@include rem(margin-bottom,10px);
+					}
+					
+				}
+
+				.btn-apply{
+					display:inline-block;@include rem(margin-top,50px);
+					width:percent(435);
+					
+				}
+			}
+			
+			@include breakpoint(desktop){
+				padding-bottom:0;
+				.text-group{
+					padding-left:10px;
+				}
+
+				.btn-apply{
+					width:591px;
+					@include rem(margin-top,60px);
+				}
+
+				background-image: url(../img/pc/bg_title.jpg);
+				height:1040px;
+			}
+		}
+
+		&-live{
+			background: url(../img/mobile/bg_live.jpg) no-repeat 50% 0;
+			background-size:cover;
+			@include rem(padding, 80px 0 70px);
+			@include boxSizing(border-box);
+			@include breakpoint(desktop){
+				padding:0;
+				@include rem(padding-top, 50px);
+				background-image: url(../img/pc/bg_live.jpg);
+				height:553px;
+				
+			}
+			.live-group{
+				@include breakpoint(desktop){
+					display:flex;
+				}
+		
+				.btn-live{
+					width:percent(438);margin:0 auto;
+					
+					a{display:inline-block;}
+					@include breakpoint(desktop){
+						@include rem(padding-top, 40px);
+						width:auto;
+					}
+				}
+				.youtube-live{
+					text-align:left;
+
+					@include breakpoint(desktop){
+						@include rem(margin-left,60px);
+					}
+					.title{
+						width:percent(432);@include rem(margin-top,70px);
+						@include breakpoint(desktop){
+							width:auto;
+							margin-top:0;
+						}
+					}
+					.info{
+						@include rem(margin-top,36px);
+						p{
+							color:#fff;
+							@include vw(24px);
+							@include rem(margin-top,10px);
+							&:first-child{margin-top:0;}
+							strong{font-weight:700;}
+							span{display:inlien-block;@include rem(padding,0 20px);}
+							&.highlight{color:#f9c642;@include vw(18px);@include rem(margin-top,26px);}
+						}
+					}
+
+					.btn-group{
+						font-size:0;
+						@include rem(margin-top, 47px);
+						@include breakpoint(desktop){
+							@include rem(margin-top, 30px);
+						}
+
+						.btn{
+							margin-left:2%;
+							&:first-child{margin-left:0;}
+							@include breakpoint(desktop){	
+								margin-left:20px;
+								&:first-child{margin-left:0;}
+							}
+
+							&-full{
+								margin-top:2%;
+								margin-left:0;
+								@include breakpoint(desktop){	
+									margin-top:20px;
+								}
+							}
+						}
+					}
+				}
+			}
+
+		}
+
+		&-guide{
+			background: url(../img/mobile/bg_guide.jpg) no-repeat 50% 100%;
+			background-size:cover;
+			@include rem(padding-bottom, 240px);
+			@include breakpoint(desktop){
+				background-image: url(../img/pc/bg_guide.jpg);
+				height:1645px;
+				padding-bottom:0;
+			}
+			.title{
+				width:percent(182);margin:0 auto;
+				@include rem(padding, 100px 0 50px);
+				@include breakpoint(desktop){
+					width:auto;
+				}
+			}
+
+			.guide-list{
+				ul{
+
+					@include breakpoint(desktop){
+						display:flex;
+						flex-wrap:wrap;
+						
+					}
+
+					li{
+						@include rem(padding, 50px 0);
+						border-top:1px solid #9dbfd4;
+						&:first-child{border-top:0;padding-top:0;}
+						&:last-child{padding-bottom:0;}
+
+						@include breakpoint(desktop){
+							width:50%;
+							&:nth-child(2){border-top:0;padding-top:0;}
+						}
+						.btn{
+							border-radius:5px;font-weight:400;
+							border-color:#9dbfd4;
+							width:percent(357);
+							@include rem(padding, 12px 0);
+							@include breakpoint(desktop){	
+								width:230px;
+								@include rem(padding, 10px 0);
+								
+							}
+
+							&-full{
+			
+							}
+						}
+					}
+				}
+			}
+			
+		}
+
+		&-movie{
+			background: url(../img/mobile/bg_movie.jpg) no-repeat 50% 50%;
+			background-size:cover;
+			@include rem(padding-bottom, 80px);
+			@include breakpoint(desktop){
+				@include rem(padding-bottom, 180px);
+			}
+			.title{
+				width:percent(343);margin:0 auto;
+				@include rem(padding, 100px 0);
+				@include breakpoint(desktop){
+					width:auto;
+				}
+			}
+			.movie-group{
+				width:100%;height:0;position: relative; padding-bottom: 56.25%;
+				background-color:#000;
+				iframe{position:absolute;left:0;top:0;width:100%;height:100%;}
+				@include breakpoint(desktop){
+					//width:1000px;height:563px;margin:0 auto;padding-bottom:0;
+					//iframe{position:static;}
+				}
+			}
+			@include breakpoint(desktop){
+				background-image: url(../img/pc/bg_movie.jpg);
+			}
+		}
+
+		&-company{
+			background: url(../img/mobile/bg_company.jpg) no-repeat 50% 50%;
+			background-size:cover;
+			@include rem(padding,70px 0 60px);
+			@include breakpoint(desktop){
+				@include rem(padding,140px 0 110px);
+			}
+			.company-group{
+				@include breakpoint(desktop){
+					display:flex;
+				}
+				.link-group{
+					@include rem(margin-top,75px);
+					@include breakpoint(desktop){
+						margin-top:0;
+						@include rem(margin-left,60px);
+					}
+
+					.link-list{
+						li{
+							width:percent(362);margin:0 auto;
+							@include breakpoint(desktop){
+								width:auto;
+							}
+							@include rem(margin-top,60px);
+							&:first-child{margin-top:0;}
+						}
+					}
+	
+					.sns-list{
+						@include rem(margin-top,60px);
+						display:flex;
+						justify-content: center;
+						@include breakpoint(desktop){
+							justify-content: left;
+							@include rem(margin-top,26px);
+						}
+						li{
+							width:percent(62);
+							@include breakpoint(desktop){
+								width:auto;
+							}
+							@include rem(margin-left,24px);
+							&:first-child{margin-left:0;}
+						}
+					}
+				}
+
+			}
+			@include breakpoint(desktop){
+				background-image: url(../img/pc/bg_company.jpg);
+			}
+		}
+	}
+
+	#footer{
+		background-color:#2d76a4;
+		.copyright{
+			color:#fff;@include vw(24px);line-height:1.3;
+			@include rem(padding, 40px 0);
+			@include breakpoint(desktop){
+				font-size:20px;
+				padding:50px 0 50px;
+			}
+		}
+	}
+
+}
