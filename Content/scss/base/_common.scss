@@ -37,7 +37,7 @@
     
         @include breakpoint(desktop){
             width:287px;
-            @include rem(padding, 13px 0);
+            @include rem(padding, 8.5px 0);
             font-size: 20px;
         }
 
@@ -46,6 +46,7 @@
             background-color:#f9c642;
             color:#0f4880;
             border:none;
+            
             @include breakpoint(desktop){
                 width:95.5%
             }
