@@ -1,4 +1,4 @@
-.dimmed, .dim {
+.dimmed{
     display: none;
     position: fixed;
     top: 0; 
@@ -11,12 +11,10 @@
     background-color: rgba( 0, 0, 0, .7);
 }
 
-.dimmed{ z-index: 1003;}
-
 .popup {
     display: none;
     position: absolute;
-    top: 30%;
+    top: 0;
     left: 50%;
     z-index: 1004;
     width: 100%;

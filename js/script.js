@@ -9,7 +9,6 @@ var _wid;
 var _breakpoint = 720;
 var _breakpointDesktop = 1100;
 
-
 $(function(){
     init();
 });
@@ -37,8 +36,8 @@ function addEvent(){
 
 
 function scrollEvent(){
-    var st = $(window).scrollTop();
-    var sh = $(window).height() / 1.2;
+    var st = _w.scrollTop();
+    var sh = _w.height() / 1.2;
     var section = $('.section');
 
     section.each(function(i){
@@ -114,8 +113,4 @@ function popupPosition($popupLayer) {
 
     $popupLayer.css({top:topValue});
 }
-
-
-
-
 

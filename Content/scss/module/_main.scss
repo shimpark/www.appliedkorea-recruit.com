@@ -1,7 +1,5 @@
 #wrap{
 	.section{
-		position: relative;
-		
 		&-title{
 			background: url(../img/mobile/bg_title.jpg) no-repeat 50% 100%;
 			background-size:cover;
@@ -79,6 +77,7 @@
 					}
 					.title{
 						@include rem(margin-top,70px);
+						width:percent(540);
 						@include breakpoint(desktop){
 							width:auto;
 							margin-top:0;
